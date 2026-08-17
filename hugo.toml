@@ -30,6 +30,14 @@ paginate = 10
   ShowRssButtonInSectionTermList = true
   comments = false                   # 评论（以后想加再开）
 
+  # 站点图标（favicon）：优先 SVG，PNG/ICO 作兼容回退
+  [params.assets]
+    favicon = "favicon.svg"
+    favicon16x16 = "favicon-16x16.png"
+    favicon32x32 = "favicon-32x32.png"
+    apple_touch_icon = "apple-touch-icon.png"
+    safari_pinned_tab = "safari-pinned-tab.svg"
+
   # 首页欢迎区（Home-Info 模式，和 Lilian 的博客同款布局）
   [params.homeInfoParams]
     Title = "👋 欢迎来到日哥的博客"
