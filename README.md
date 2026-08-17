@@ -1,4 +1,4 @@
-# 日哥的博客 📝
+# 知微录 📝
 
 用 **Hugo + PaperMod** 搭建的静态博客，托管在 GitHub Pages（免费）。
 

@@ -1,11 +1,11 @@
 ---
 title: "关于我"
-summary: "关于这个博客和日哥"
+summary: "关于这个博客"
 ---
 
 # 关于我 👤
 
-你好！我是日哥，这个博客的主人。
+你好！我是jinhuaiqun，这个博客的主人。
 
 ## 我是谁
 
@@ -21,6 +21,6 @@ summary: "关于这个博客和日哥"
 ## 联系我
 
 - ✉️ 邮箱：你的邮箱@example.com
-- 🐙 GitHub：https://github.com/你的用户名
+- 🐙 GitHub：https://github.com/jinhuaiqun
 
 欢迎交流，一起学习进步！🚀
