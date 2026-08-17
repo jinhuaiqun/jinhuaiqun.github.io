@@ -21,14 +21,10 @@ hugo server -D
 
 ## 发布到 GitHub Pages（3 步）
 
-1. **在 GitHub 上新建一个仓库**，名字随意（例如 `my-blog`），保持公开。
-2. **把本项目推送到仓库**：
+1. **在 GitHub 上新建仓库**，名字填 `jinhuaiqun.github.io`（必须和你的用户名一致），选择 **Public**。
+2. **把本项目推送到仓库**（Git 会弹出登录窗口，用浏览器登录一次即可）：
 
    ```bash
-   git init -b main
-   git add .
-   git commit -m "first commit"
-   git remote add origin https://github.com/你的用户名/my-blog.git
    git push -u origin main
    ```
 
@@ -37,7 +33,7 @@ hugo server -D
    - `Build and deployment` → `Source` 选择 **GitHub Actions**
    - 仓库里已经带好了自动部署工作流（`.github/workflows/hugo.yaml`），推送后会自动构建并发布
 
-发布完成后，你的博客地址是：`https://你的用户名.github.io/my-blog/`
+发布完成后，你的博客地址是：`https://jinhuaiqun.github.io/`
 
 ## 别忘了改这些
 
