@@ -3,7 +3,7 @@
 # 所以这里保持本地地址即可，无需手动改。
 baseURL = "http://localhost:1313/"
 locale = "zh-cn"
-title = "我的小博客"
+title = "日哥的博客"
 theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = true
@@ -15,7 +15,7 @@ paginate = 10
 
 [params]
   env = "production"
-  author = "博主"
+  author = "日哥"
   description = "记录生活，分享思考"
   DateFormat = "2006-01-02"
   defaultTheme = "auto"              # 主题：light / dark / auto（跟随系统）
@@ -32,14 +32,14 @@ paginate = 10
 
   # 首页欢迎区（Home-Info 模式，和 Lilian 的博客同款布局）
   [params.homeInfoParams]
-    Title = "👋 欢迎来到我的小博客"
-    Content = "你好，我是这个博客的主人。这里记录我的学习笔记和生活点滴。"
+    Title = "👋 欢迎来到日哥的博客"
+    Content = "你好，我是日哥。这里记录我的学习笔记和生活点滴。"
 
   # 页脚（留空即只显示主题默认的版权和开源致谢）
 
   # 顶部站点标识
   [params.label]
-    text = "我的小博客"
+    text = "日哥的博客"
 
   # 社交媒体图标（改成你自己的链接）
   [[params.socialIcons]]
