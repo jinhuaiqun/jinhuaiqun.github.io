@@ -1,0 +1,76 @@
+baseURL = "https://YOUR-USERNAME.github.io/"
+locale = "zh-cn"
+title = "我的小博客"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+paginate = 10
+
+# 输出格式：HTML + RSS + JSON（JSON 是站内搜索功能必需的）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  author = "博主"
+  description = "记录生活，分享思考"
+  DateFormat = "2006-01-02"
+  defaultTheme = "auto"              # 主题：light / dark / auto（跟随系统）
+  disableThemeToggle = false         # 是否禁用明暗切换按钮
+  ShowReadingTime = true             # 显示阅读时长
+  ShowWordCount = true               # 显示字数
+  ShowBreadCrumbs = true             # 面包屑导航
+  ShowToc = true                     # 文章目录
+  ShowCodeCopyButtons = true         # 代码块复制按钮
+  ShowPostNavLinks = true            # 上一篇/下一篇
+  ShowAllPagesInArchive = true       # 归档页显示全部文章
+  ShowRssButtonInSectionTermList = true
+  comments = false                   # 评论（以后想加再开）
+
+  # 首页欢迎区（Home-Info 模式，和 Lilian 的博客同款布局）
+  [params.homeInfoParams]
+    Title = "👋 欢迎来到我的小博客"
+    Content = "这里记录我的学习笔记和生活点滴。用 **Hugo + PaperMod** 搭建，托管在 GitHub Pages。点击下方文章开始阅读吧！"
+
+  # 页脚
+  [params.footer]
+    text = "用 ❤️ 和 Hugo + PaperMod 搭建"
+
+  # 顶部站点标识
+  [params.label]
+    text = "我的小博客"
+
+  # 社交媒体图标（改成你自己的链接）
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/YOUR-USERNAME"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:you@example.com"
+
+# 顶部导航菜单
+[[menu.main]]
+    identifier = "posts"
+    name = "📝 文章"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "archives"
+    name = "🗂️ 归档"
+    url = "/archives/"
+    weight = 2
+  [[menu.main]]
+    identifier = "search"
+    name = "🔍 搜索"
+    url = "/search/"
+    weight = 3
+  [[menu.main]]
+    identifier = "tags"
+    name = "🏷️ 标签"
+    url = "/tags/"
+    weight = 4
+  [[menu.main]]
+    identifier = "about"
+    name = "👤 关于"
+    url = "/about/"
+    weight = 5
