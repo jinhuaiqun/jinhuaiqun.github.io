@@ -18,3 +18,8 @@ body {
   font-size: 18px;
 }
 /* h4~h6 两边一致（16/14/12px），无需调整 */
+
+/* 文章顶部大标题：新版 PaperMod 是 40px，Lilian 的是 36px，对齐 */
+.post-title {
+  font-size: 36px;
+}
