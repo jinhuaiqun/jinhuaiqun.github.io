@@ -41,9 +41,10 @@ hugo server -D
 
 ## 别忘了改这些
 
-- `hugo.toml` 里的 `baseURL`（改成你的真实地址）
-- `hugo.toml` 里的 `YOUR-USERNAME`（社交链接）
-- 想用自定义域名？在仓库 `Settings → Pages` 里设置即可
+- `hugo.toml` 里的 `YOUR-USERNAME`（社交图标链接，改成你的 GitHub 用户名）
+- `hugo.toml` 里的 `you@example.com`（改成你的邮箱）
+- **不用改 `baseURL`**：本地预览用它指向 `localhost:1313`，部署时工作流会自动覆盖成你的真实网址
+- 想用自定义域名？在仓库 `Settings → Pages` 里设置即可（此时才需要把 `baseURL` 改成你的域名）
 
 ## 写新文章
 

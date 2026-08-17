@@ -1,4 +1,7 @@
-baseURL = "https://YOUR-USERNAME.github.io/"
+# baseURL：本地预览地址。
+# 部署到 GitHub Pages 时，.github/workflows/hugo.yaml 会用 --baseURL 自动覆盖成你的真实网址，
+# 所以这里保持本地地址即可，无需手动改。
+baseURL = "http://localhost:1313/"
 locale = "zh-cn"
 title = "我的小博客"
 theme = "PaperMod"
