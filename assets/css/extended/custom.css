@@ -1,4 +1,20 @@
 /* 自定义样式：让观感更接近 Lilian 博客的清爽风格 */
+
+/* 正文字号：新版 PaperMod 默认 18px，她的是 16px */
 body {
   font-size: 16px;
 }
+
+/* 文章内标题：新版 PaperMod 标题偏大，对齐她的紧凑风格 */
+.md-content h1 {
+  margin: 28px auto 20px;
+  font-size: 28px;
+}
+.md-content h2 {
+  margin: 24px auto 16px;
+  font-size: 24px;
+}
+.md-content h3 {
+  font-size: 18px;
+}
+/* h4~h6 两边一致（16/14/12px），无需调整 */
