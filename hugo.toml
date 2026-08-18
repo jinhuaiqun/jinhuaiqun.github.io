@@ -3,7 +3,7 @@
 # 所以这里保持本地地址即可，无需手动改。
 baseURL = "http://localhost:1313/"
 locale = "zh-cn"
-title = "知微录"
+title = "我的自留地"
 theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = true
@@ -15,7 +15,7 @@ paginate = 10
 
 [params]
   env = "production"
-  author = "zhizunyu"
+  author = "jinhuaiqun"
   description = "记录生活，分享思考"
   DateFormat = "2006-01-02"
   defaultTheme = "auto"              # 主题：light / dark / auto（跟随系统）
@@ -40,14 +40,14 @@ paginate = 10
 
   # 首页欢迎区（Home-Info 模式，和 Lilian 的博客同款布局）
   [params.homeInfoParams]
-    Title = "👋 欢迎来到知微录"
+    Title = "👋 欢迎来到我的自留地"
     Content = "把沿途所学、所想、所疑，慢慢记下，久而久之，微光亦可成炬，涓滴亦能成流。"
 
   # 页脚（留空即只显示主题默认的版权和开源致谢）
 
   # 顶部站点标识
   [params.label]
-    text = "知微录"
+    text = "我的自留地"
 
   # 社交媒体图标（改成你自己的链接）
   [[params.socialIcons]]
