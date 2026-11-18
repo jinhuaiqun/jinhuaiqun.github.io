@@ -1,21 +1,21 @@
 {{- $scratch := newScratch }}
 
 {{- if not .Date.IsZero -}}
-    {{- $scratch.Add "meta" (slice (printf "<span>Date: %s</span>" (.Date | time.Format "January 2, 2006"))) }}
+    {{- $scratch.Add "meta" (slice (printf "<span>发布于 %s</span>" (.Date | time.Format "2006年1月2日"))) }}
 {{- end }}
 
 {{- if (.Param "ShowReadingTime") -}}
-    {{- $scratch.Add "meta" (slice (printf "<span>Estimated Reading Time: %d min</span>" .ReadingTime)) }}
+    {{- $scratch.Add "meta" (slice (printf "<span>阅读时长 %d 分钟</span>" .ReadingTime)) }}
 {{- end }}
 
 {{- if not (.Param "hideAuthor") -}}
     {{- with (partial "author.html" .) }}
-        {{- $scratch.Add "meta" (slice (printf "<span>Author: %s</span>" .)) }}
+        {{- $scratch.Add "meta" (slice (printf "<span>作者 %s</span>" .)) }}
     {{- end }}
 {{- end }}
 
 {{/* Combine all meta information into a single string with separators and render it as HTML.*/}}
 
 {{- with ($scratch.Get "meta") }}
-    {{- delimit . "&nbsp;|&nbsp;" | safeHTML -}}
+    {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
 {{- end -}}
